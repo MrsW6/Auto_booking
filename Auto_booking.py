@@ -150,13 +150,13 @@ def yuyue(session,start_time,day,changguanID,ids,phoneNum):
 
 if __name__ == '__main__':
     #信息填写
-    username = ''#一卡通
-    password = ''#统一身份密码
+    username = '220214881'#一卡通
+    password = 'dndx980721'#统一身份密码
     ids = 111111#常用联系人代号
-    phoneNum = ''#手机号
+    phoneNum = '15650170679'#手机号
     session = getsession(username,password)#获取登录后的会话
     changguanID = 10 #九龙湖 羽毛球10  兵乓球7  篮球8
-    target_day_flag = ['2021-04-16']#格式'2021-04-16'  为空自动预约包含今天在内的下三天内
+    target_day_flag = ['']#格式'2021-04-16'  为空自动预约包含今天在内的下三天内
     target_time = ['18','19','20'] #如18:00-19:00 则填'18'即可 列表模式
 
     #pushplus的token 即令牌  用于将信息通过pushplus公众号发送到微信  没有不影响自动预约功能，但影响通知功能
